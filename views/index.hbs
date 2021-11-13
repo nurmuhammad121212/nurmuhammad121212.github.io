@@ -1,0 +1,18 @@
+<div class="container salom">
+  <div class="row saloma">
+    {{#if db.length}}
+      {{#each db}}
+        <div class="card" style="width: 18rem;">
+          <img src="/images/{{img}}" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">{{name}}</h5>
+         <div class="narx " >Narxi: <p class="card-text">{{price}}</p> -So'm</div>
+            <div class="telefon"> Telefon raqam: <p class="card-text">{{phone}}</p></div>
+            <a href="/more/{{id}}"type="button" class="btn btn-outline-success " ><b>Batafsil</b></a>
+            <a href="/update/{{id}}" class="update">O'zgartirish</a>
+          </div>
+        </div>
+      {{/each}}
+    {{/if}}
+  </div>
+</div>
